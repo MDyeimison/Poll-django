@@ -1,0 +1,27 @@
+conda create -n envname python=x.x anaconda
+
+source activate envname
+
+sudo apt install python3-django
+
+django-admin startproject projectname
+
+cd projectfolder
+
+python manage.py runserver
+
+python3 startapp appname
+
+python3 manage.py startapp appname
+
+## apply the migrations and creates the tables and schemas in the db
+python3 manage.py migrate
+
+## create migrations for the app
+python3 manage.py makemigrations appname
+
+## check SQL
+python manage.py sqlmigrate appname 0001
+
+## play with the API
+python3 manage.py shell
