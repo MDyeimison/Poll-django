@@ -25,3 +25,12 @@ python manage.py sqlmigrate appname 0001
 
 ## play with the API
 python3 manage.py shell
+
+######################################################################
+
+## create superuser
+python3 manage.py createsuperuser
+
+## access admin
+/admin/
+
